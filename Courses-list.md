@@ -1,9 +1,3 @@
----
-layout: post
-title:  MIT Challenge
-category: UltraLearning
----
-
 # Selected Courses #
 
 ## Mathematics Fundamentals ##
