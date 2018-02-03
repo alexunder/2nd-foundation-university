@@ -1,7 +1,7 @@
 # Selected Courses #
 
 ## Mathematics Fundamentals ##
-- [x] [6.041SC](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/)  Probabilistic Systems Analysis and Applied Probability 
+- [x] [6.041SC](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/)  Probabilistic Systems Analysis and Applied Probability
 
 - [ ] [18.06sc](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/) Linear Algebra
 
@@ -21,7 +21,15 @@
 
 - [ ] [6.033](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-033-computer-system-engineering-spring-2009/) Computer System Engineering
 
-- [ ] [6.035](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-035-computer-language-engineering-spring-2010/) Computer Language Engineering && [CS1 Stanford](https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014) Compilers
+- [ ] [6.035](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-035-computer-language-engineering-spring-2010/) Computer Language Engineering
+
+- [ ] [CS1 Stanford](https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014) Compilers
+
+- [ ] [CS 61A](https://cs61a.org/) Structure and Interpretation of Computer Programs
+
+- [ ] [CS 61B](http://datastructur.es/sp16/) Data Structure, Spring 2016
+
+- [ ] [CSE 351](https://courses.cs.washington.edu/courses/cse351/16sp/) The Hardware/Software Interface, Spring 2016
 
 ## Graphic ##
 
@@ -34,3 +42,10 @@
 - [ ] [CS229](http://cs229.stanford.edu) Machine Learning
 
 - [ ] [CS231n](http://vision.stanford.edu/teaching/cs231n/) Convolutional Neural Networks for Visual Recognition
+
+- [ ] [CS294](http://rll.berkeley.edu/deeprlcourse/) Deep Reinforcement Learning, Fall 2017
+
+## Reference ##
+
+1. [Teach Yourself Computer Scienc](https://teachyourselfcs.com/)
+2. [CMU CS undergraduate Requirements](https://www.csd.cs.cmu.edu/academics/undergraduate/requirements)
