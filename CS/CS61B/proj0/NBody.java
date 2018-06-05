@@ -1,4 +1,6 @@
 public class NBody {
+    public static final double SCIENTIFIC_RATIO = 1.0e+9;
+
     public static double readRadius(String filename) {
         In in = new In(filename);
         int numberOfPlanets = in.readInt();
@@ -30,10 +32,9 @@ public class NBody {
     }
 
     public static void drawBackground(double radius) {
-        int scale = (int)radius + 1;
-        System.out.println("scale =" + scale);
+        int scale = (int)(radius / SCIENTIFIC_RATIO);
         StdDraw.setScale(-scale, scale);
-        StdDraw.picture(-scale, -scale, "images/starfield.jpg");
+        StdDraw.picture(0, 0 , "images/starfield.jpg");
     }
 
     public static void main(String[] args) {
@@ -49,6 +50,41 @@ public class NBody {
 
         double r = readRadius(filename);
         Planet [] planets = readPlanets(filename);
-        drawBackground(r);
+
+        StdDraw.enableDoubleBuffering();
+
+        int t = 0;
+        int i = 0;
+
+        double [] xForces = new double[planets.length];
+        double [] yForces = new double[planets.length];
+
+        for (t = 0; t < T; t += dt) {
+            for (i = 0; i < planets.length; i++) {
+                xForces[i] = planets[i].calcNetForceExertedByX(planets);
+                yForces[i] = planets[i].calcNetForceExertedByY(planets);
+            }
+
+            for (i = 0; i < planets.length; i++) {
+                planets[i].update(t, xForces[i], yForces[i]);
+            }
+
+            drawBackground(r);
+
+            for (i = 0; i < planets.length; i++) {
+                planets[i].draw();
+            }
+
+            StdDraw.show();
+            StdDraw.pause(10);
+        }
+
+        StdOut.printf("%d\n", planets.length);
+        StdOut.printf("%.2e\n", r);
+        for (i = 0; i < planets.length; i++) {
+            StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
+                    planets[i].xxPos, planets[i].yyPos, planets[i].xxVel,
+                    planets[i].yyVel, planets[i].mass, planets[i].imgFileName);
+        }
     }
 }

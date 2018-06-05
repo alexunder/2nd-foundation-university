@@ -77,4 +77,11 @@ public class Planet {
         xxPos += t * xxVel;
         yyPos += t * yyVel;
     }
+
+    public void draw() {
+        int x = (int)(xxPos / NBody.SCIENTIFIC_RATIO);
+        int y = (int)(yyPos / NBody.SCIENTIFIC_RATIO);
+        String imagePath = "images/" + imgFileName;
+        StdDraw.picture(x, y, imagePath);
+    }
 }
